@@ -1,0 +1,271 @@
+// Dados das 52 semanas do cronograma ENEM 2026
+// Conteúdos organizados por áreas: Linguagens (L), Humanas (H), Matemática (M), Natureza (N), Redação (R)
+// Níveis: Básico (B), Intermediário (I), Avançado (A)
+// Inclui tarefas práticas, links de vídeos (URLs externas), revisões e simulados
+export const weeksData = [
+  {
+    id: 1,
+    content: 'Introdução a Linguagens (B): Gramática básica (sujeito, predicado). Explicação: O sujeito é quem pratica a ação. Tarefas práticas: Identifique sujeitos em frases. Vídeos: https://www.youtube.com/watch?v=exemplo1',
+    tasks: ['Ler capítulo 1 de gramática', 'Fazer 10 exercícios básicos', 'Revisar conceitos'],
+    completed: false,
+  },
+  {
+    id: 2,
+    content: 'Linguagens (I): Figuras de linguagem. Explicação: Metáfora é uma comparação implícita. Tarefas práticas: Criar 5 metáforas. Vídeos: https://www.youtube.com/watch?v=exemplo2',
+    tasks: ['Estudar figuras de linguagem', 'Praticar redação curta', 'Revisar semana 1'],
+    completed: false,
+  },
+  {
+    id: 3,
+    content: 'Humanas (B): História antiga (Egito, Grécia). Explicação: O Egito antigo tinha faraós como governantes. Tarefas práticas: Mapear civilizações. Vídeos: https://www.youtube.com/watch?v=exemplo3',
+    tasks: ['Ler sobre Egito', 'Fazer timeline histórica', 'Revisar linguagens'],
+    completed: false,
+  },
+  {
+    id: 4,
+    content: 'Matemática (B): Números reais e operações. Explicação: Números reais incluem inteiros e decimais. Tarefas práticas: Resolver 20 operações. Vídeos: https://www.youtube.com/watch?v=exemplo4',
+    tasks: ['Praticar adição/subtração', 'Fazer exercícios online', 'Revisar humanas'],
+    completed: false,
+  },
+  {
+    id: 5,
+    content: 'Natureza (B): Biologia celular. Explicação: A célula é a unidade básica da vida. Tarefas práticas: Desenhar uma célula. Vídeos: https://www.youtube.com/watch?v=exemplo5',
+    tasks: ['Estudar organelas', 'Fazer quiz celular', 'Revisar matemática'],
+    completed: false,
+  },
+  {
+    id: 6,
+    content: 'Redação (B): Estrutura básica. Explicação: Introdução, desenvolvimento, conclusão. Tarefas práticas: Escrever redação sobre educação. Vídeos: https://www.youtube.com/watch?v=exemplo6',
+    tasks: ['Planejar estrutura', 'Escrever rascunho', 'Revisar natureza'],
+    completed: false,
+  },
+  {
+    id: 7,
+    content: 'Linguagens (A): Interpretação de texto. Explicação: Foque no tema e argumentos. Tarefas práticas: Analisar 3 textos. Vídeos: https://www.youtube.com/watch?v=exemplo7',
+    tasks: ['Ler textos complexos', 'Fazer resumos', 'Revisar redação'],
+    completed: false,
+  },
+  {
+    id: 8,
+    content: 'Humanas (I): Geografia física. Explicação: Relevo molda o clima. Tarefas práticas: Mapear biomas brasileiros. Vídeos: https://www.youtube.com/watch?v=exemplo8',
+    tasks: ['Estudar climas', 'Fazer mapa mental', 'Revisar linguagens'],
+    completed: false,
+  },
+  {
+    id: 9,
+    content: 'Matemática (I): Funções. Explicação: f(x) = 2x + 1 é uma função linear. Tarefas práticas: Graficar 5 funções. Vídeos: https://www.youtube.com/watch?v=exemplo9',
+    tasks: ['Resolver equações', 'Praticar gráficos', 'Revisar humanas'],
+    completed: false,
+  },
+  {
+    id: 10,
+    content: 'Natureza (I): Física básica (cinemática). Explicação: Velocidade = espaço/tempo. Tarefas práticas: Calcular velocidades. Vídeos: https://www.youtube.com/watch?v=exemplo10',
+    tasks: ['Fazer problemas', 'Simular movimentos', 'Revisar matemática'],
+    completed: false,
+  },
+  {
+    id: 11,
+    content: 'Redação (I): Argumentação. Explicação: Use fatos e opiniões. Tarefas práticas: Redação sobre meio ambiente. Vídeos: https://www.youtube.com/watch?v=exemplo11',
+    tasks: ['Coletar argumentos', 'Escrever versão final', 'Revisar natureza'],
+    completed: false,
+  },
+  {
+    id: 12,
+    content: 'Revisão Geral (Semanas 1-11): Simulado parcial. Explicação: Revise conteúdos básicos. Tarefas práticas: Fazer simulado de 50 questões. Vídeos: https://www.youtube.com/watch?v=exemplo12',
+    tasks: ['Revisar todas as áreas', 'Corrigir erros', 'Planejar próximas semanas'],
+    completed: false,
+  },
+  {
+    id: 13,
+    content: 'Linguagens (A): Literatura brasileira. Explicação: Modernismo trouxe inovações. Tarefas práticas: Analisar poema. Vídeos: https://www.youtube.com/watch?v=exemplo13',
+    tasks: ['Ler autores modernos', 'Escrever análise', 'Revisar redação'],
+    completed: false,
+  },
+  {
+    id: 14,
+    content: 'Humanas (A): Filosofia (ética). Explicação: Ética estuda o bem e o mal. Tarefas práticas: Debater dilemas. Vídeos: https://www.youtube.com/watch?v=exemplo14',
+    tasks: ['Estudar pensadores', 'Fazer ensaio', 'Revisar linguagens'],
+    completed: false,
+  },
+  {
+    id: 15,
+    content: 'Matemática (A): Geometria analítica. Explicação: Equação da reta: y = mx + b. Tarefas práticas: Resolver problemas. Vídeos: https://www.youtube.com/watch?v=exemplo15',
+    tasks: ['Graficar retas', 'Calcular distâncias', 'Revisar humanas'],
+    completed: false,
+  },
+  {
+    id: 16,
+    content: 'Natureza (A): Química orgânica. Explicação: Cadeias carbônicas formam compostos. Tarefas práticas: Identificar funções. Vídeos: https://www.youtube.com/watch?v=exemplo16',
+    tasks: ['Estudar reações', 'Fazer laboratório virtual', 'Revisar matemática'],
+    completed: false,
+  },
+  {
+    id: 17,
+    content: 'Redação (A): Temas contemporâneos. Explicação: Foque em atualidades. Tarefas práticas: Redação sobre tecnologia. Vídeos: https://www.youtube.com/watch?v=exemplo17',
+    tasks: ['Pesquisar temas', 'Escrever com coesão', 'Revisar natureza'],
+    completed: false,
+  },
+  {
+    id: 18,
+    content: 'Simulado Completo (Revisão Semanas 12-17). Explicação: Teste geral. Tarefas práticas: Simulado de 180 questões. Vídeos: https://www.youtube.com/watch?v=exemplo18',
+    tasks: ['Fazer simulado', 'Analisar gabarito', 'Ajustar estudos'],
+    completed: false,
+  },
+  // Continuando o padrão para as próximas semanas (variando áreas e níveis)
+  {
+    id: 19,
+    content: 'Linguagens (B): Ortografia. Explicação: Regras de acentuação. Tarefas práticas: Corrigir textos. Vídeos: https://www.youtube.com/watch?v=exemplo19',
+    tasks: ['Praticar regras', 'Fazer ditado', 'Revisar simulado'],
+    completed: false,
+  },
+  {
+    id: 20,
+    content: 'Humanas (B): Sociologia. Explicação: Sociedade é organizada em grupos. Tarefas práticas: Analisar instituições. Vídeos: https://www.youtube.com/watch?v=exemplo20',
+    tasks: ['Estudar conceitos', 'Debater em grupo', 'Revisar linguagens'],
+    completed: false,
+  },
+  {
+    id: 21,
+    content: 'Matemática (B): Probabilidade. Explicação: Probabilidade = casos favoráveis/total. Tarefas práticas: Resolver jogos. Vídeos: https://www.youtube.com/watch?v=exemplo21',
+    tasks: ['Calcular chances', 'Fazer exercícios', 'Revisar humanas'],
+    completed: false,
+  },
+  {
+    id: 22,
+    content: 'Natureza (B): Ecologia. Explicação: Ecossistemas interagem. Tarefas práticas: Mapear cadeia alimentar. Vídeos: https://www.youtube.com/watch?v=exemplo22',
+    tasks: ['Estudar biomas', 'Fazer projeto', 'Revisar matemática'],
+    completed: false,
+  },
+  {
+    id: 23,
+    content: 'Redação (B): Coesão textual. Explicação: Use conectivos. Tarefas práticas: Redação sobre saúde. Vídeos: https://www.youtube.com/watch?v=exemplo23',
+    tasks: ['Melhorar texto', 'Revisar conectivos', 'Revisar natureza'],
+    completed: false,
+  },
+  {
+    id: 24,
+    content: 'Revisão Geral (Semanas 18-23): Simulado parcial. Explicação: Foque em fraquezas. Tarefas práticas: Simulado de 90 questões. Vídeos: https://www.youtube.com/watch?v=exemplo24',
+    tasks: ['Revisar erros', 'Praticar mais', 'Planejar avançadas'],
+    completed: false,
+  },
+  // Padrão continua até a semana 52, alternando áreas e incluindo mais avançados/revisões
+  // Para brevidade, resumo as restantes (expanda conforme necessário; todas seguem o mesmo formato)
+  {
+    id: 25,
+    content: 'Linguagens (I): Semântica. Explicação: Significado das palavras. Tarefas práticas: Analisar sinônimos. Vídeos: https://www.youtube.com/watch?v=exemplo25',
+    tasks: ['Estudar campos semânticos', 'Fazer exercícios', 'Revisar redação'],
+    completed: false,
+  },
+  {
+    id: 26,
+    content: 'Humanas (I): Economia. Explicação: Oferta e demanda. Tarefas práticas: Calcular inflação. Vídeos: https://www.youtube.com/watch?v=exemplo26',
+    tasks: ['Graficar curvas', 'Analisar mercado', 'Revisar linguagens'],
+    completed: false,
+  },
+  {
+    id: 27,
+    content: 'Matemática (I): Trigonometria. Explicação: Seno, cosseno. Tarefas práticas: Resolver triângulos. Vídeos: https://www.youtube.com/watch?v=exemplo27',
+    tasks: ['Praticar identidades', 'Fazer aplicações', 'Revisar humanas'],
+    completed: false,
+  },
+  {
+    id: 28,
+    content: 'Natureza (I): Física quântica. Explicação: Partículas e ondas. Tarefas práticas: Experimentos virtuais. Vídeos: https://www.youtube.com/watch?v=exemplo28',
+    tasks: ['Estudar dualidade', 'Resolver problemas', 'Revisar matemática'],
+    completed: false,
+  },
+  {
+    id: 29,
+    content: 'Redação (I): Linguagem formal. Explicação: Evite gírias. Tarefas práticas: Redação sobre direitos humanos. Vídeos: https://www.youtube.com/watch?v=exemplo29',
+    tasks: ['Corrigir linguagem', 'Escrever formal', 'Revisar natureza'],
+    completed: false,
+  },
+  {
+    id: 30,
+    content: 'Simulado Completo (Revisão Semanas 24-29). Explicação: Avalie progresso. Tarefas práticas: Simulado integral. Vídeos: https://www.youtube.com/watch?v=exemplo30',
+    tasks: ['Fazer simulado', 'Analisar desempenho', 'Ajustar cronograma'],
+    completed: false,
+  },
+  // Continue o padrão até 52 (ex: semanas 31-40 focam em avançados e revisões específicas por área; 41-50 simulados e redações; 51-52 revisão final e ENEM mock)
+  {
+    id: 31,
+    content: 'Linguagens (A): Discurso indireto. Explicação: Transforme citações. Tarefas práticas: Converter frases. Vídeos: https://www.youtube.com/watch?v=exemplo31',
+    tasks: ['Praticar conversões', 'Analisar textos', 'Revisar simulado'],
+    completed: false,
+  },
+  {
+    id: 32,
+    content: 'Humanas (A): Política internacional. Explicação: ONU e globalização. Tarefas práticas: Debater conflitos. Vídeos: https://www.youtube.com/watch?v=exemplo32',
+    tasks: ['Estudar tratados', 'Fazer mapa geopolítico', 'Revisar linguagens'],
+    completed: false,
+  },
+  {
+    id: 33,
+    content: 'Matemática (A): Cálculo diferencial. Explicação: Derivadas. Tarefas práticas: Resolver derivadas. Vídeos: https://www.youtube.com/watch?v=exemplo33',
+    tasks: ['Praticar regras', 'Aplicar em funções', 'Revisar humanas'],
+    completed: false,
+  },
+  {
+    id: 34,
+    content: 'Natureza (A): Genética. Explicação: DNA e hereditariedade. Tarefas práticas: Cruzamentos mendelianos. Vídeos: https://www.youtube.com/watch?v=exemplo34',
+    tasks: ['Estudar leis', 'Fazer punnett', 'Revisar matemática'],
+    completed: false,
+  },
+  {
+    id: 35,
+    content: 'Redação (A): Crítica social. Explicação: Use dados para argumentar. Tarefas práticas: Redação sobre desigualdade. Vídeos: https://www.youtube.com/watch?v=exemplo35',
+    tasks: ['Pesquisar estatísticas', 'Escrever crítica', 'Revisar natureza'],
+    completed: false,
+  },
+  {
+    id: 36,
+    content: 'Revisão Geral (Semanas 30-35): Simulado parcial. Explicação: Integre áreas. Tarefas práticas: Simulado misto. Vídeos: https://www.youtube.com/watch?v=exemplo36',
+    tasks: ['Revisar avançados', 'Focar fraquezas', 'Preparar finais'],
+    completed: false,
+  },
+  // Padrão continua... (semanas 37-50: mais avançados, simulados temáticos, redações específicas)
+  {
+    id: 37,
+    content: 'Linguagens (A): Poesia contemporânea. Explicação: Linguagem experimental. Tarefas práticas: Analisar versos. Vídeos: https://www.youtube.com/watch?v=exemplo37',
+    tasks: ['Ler poetas modernos', 'Escrever poema', 'Revisar redação'],
+    completed: false,
+  },
+  {
+    id: 38,
+    content: 'Humanas (A): Antropologia. Explicação: Culturas e diversidade. Tarefas práticas: Estudar etnias. Vídeos: https://www.youtube.com/watch?v=exemplo38',
+    tasks: ['Analisar sociedades', 'Fazer relatório', 'Revisar linguagens'],
+    completed: false,
+  },
+  {
+    id: 39,
+    content: 'Matemática (A): Estatística. Explicação: Média e desvio. Tarefas práticas: Analisar dados. Vídeos: https://www.youtube.com/watch?v=exemplo39',
+    tasks: ['Calcular estatísticas', 'Interpretar gráficos', 'Revisar humanas'],
+    completed: false,
+  },
+  {
+    id: 40,
+    content: 'Natureza (A): Astronomia. Explicação: Sistema solar. Tarefas práticas: Mapear planetas. Vídeos: https://www.youtube.com/watch?v=exemplo40',
+    tasks: ['Estudar órbitas', 'Fazer observações', 'Revisar matemática'],
+    completed: false,
+  },
+  {
+    id: 41,
+    content: 'Redação (A): Temas científicos. Explicação: Integre ciência. Tarefas práticas: Redação sobre energia. Vídeos: https://www.youtube.com/watch?v=exemplo41',
+    tasks: ['Usar dados científicos', 'Argumentar tecnicamente', 'Revisar natureza'],
+    completed: false,
+  },
+  {
+    id: 42,
+    content: 'Simulado Temático (Linguagens/Humanas). Explicação: Foque nessas áreas. Tarefas práticas: Simulado de 90 questões. Vídeos: https://www.youtube.com/watch?v=exemplo42',
+    tasks: ['Fazer simulado', 'Corrigir detalhadamente', 'Revisar avançados'],
+    completed: false,
+  },
+  {
+    id: 43,
+    content: 'Simulado Temático (Matemática/Natureza). Explicação: Pratique exatas. Tarefas práticas: Simulado de 90 questões. Vídeos: https://www.youtube.com/watch?v=exemplo43',
+    tasks: ['Resolver problemas', 'Analisar erros', 'Revisar linguagens'],
+    completed: false,
+  },
+  {
+    id: 44,
+    content: 'Redação Prática:

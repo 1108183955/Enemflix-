@@ -1,0 +1,32 @@
+import { useParams } from 'react-router-dom';
+import { useState } from 'react';
+import axios from 'axios';
+import { weeksData } from '../data/weeksData';
+
+const WeekStudy = () => {
+  const { id } = useParams();
+  const week = weeksData.find(w => w.id == id);
+  const [completed, setCompleted] = useState(week.completed || false);
+
+  const handleComplete = async () => {
+    setCompleted(true);
+    await axios.post(`/api/weeks/complete/${id}`);
+  };
+
+  return (
+    <div className="bg-enemflix-black text-aprova-white p-4">
+      <h1>Semana {id}</h1>
+      <div className="flex">
+        <div className="w-2/3">{week.content}</div>
+        <div className="w-1/3">
+          <ul>
+            {week.tasks.map(task => <li key={task}><input type="checkbox" /> {task}</li>)}
+          </ul>
+          <button onClick={handleComplete} className="bg-enemflix-blue p-2 rounded">Concluir Semana</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default WeekStudy;

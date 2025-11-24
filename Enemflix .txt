@@ -1,0 +1,41 @@
+// /frontend/src/data/weeksData.js
+
+// This file contains sample data for weeks, such as an array of week objects.
+// You can customize this based on your application's needs (e.g., for a calendar, planner, or dashboard).
+
+export const weeksData = [
+  {
+    id: 1,
+    name: 'Week 1',
+    startDate: '2023-01-01',
+    endDate: '2023-01-07',
+    description: 'First week of the year.',
+    tasks: [
+      { id: 1, title: 'Task 1', completed: false },
+      { id: 2, title: 'Task 2', completed: true }
+    ]
+  },
+  {
+    id: 2,
+    name: 'Week 2',
+    startDate: '2023-01-08',
+    endDate: '2023-01-14',
+    description: 'Second week of the year.',
+    tasks: [
+      { id: 3, title: 'Task 3', completed: false }
+    ]
+  },
+  {
+    id: 3,
+    name: 'Week 3',
+    startDate: '2023-01-15',
+    endDate: '2023-01-21',
+    description: 'Third week of the year.',
+    tasks: []
+  },
+  // Add more weeks as needed
+];
+
+// Example usage in a component:
+// import { weeksData } from './data/weeksData';
+// console.log(weeksData);
